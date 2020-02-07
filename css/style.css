@@ -21,44 +21,183 @@ time, mark, audio, video {
 
 html,body {
   height: 100%;
+  max-width: 100%;
+ /* overflow-x: hidden; */
 }
 
-
-/* Bootstrap custom style*/ 
-.btn{
-	background-color: pink;
+body{
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 /* landing page style */
 #header{
-	height:80px;
-	background-color: orange;
+	position: absolute;
+	height:100px;
+	width: 100%;
+	background-color: #F4F5F5;
 }
 
 
+/* navigation style */
 #header nav{
-	position: relative;
+	width: 100%;
+	position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
+#header nav ul{
+	width: 100%;
+	position: relative;	
+	top: 10px;
+}
+
+#header nav ul li:first-child{
+	margin-left: 120px;
+}
+
 #header nav ul li{
 	display: inline;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
 }
+
+.hover-animate {
+    display: inline-block; 
+}
+
+.hover-animate::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    position: relative;
+    top: 10px;
+    background: #162B53;
+    transition: width .3s;
+}
+
+.hover-animate:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+#header nav ul li a{
+	text-decoration: none;
+	color: #A31D29;
+}
+
+#header nav ul li:last-child a{
+	float: right;
+	margin-right: 10%;
+	color: #FFF;
+}
+
 
 #nav-logo{
-	
+	content: '';
+	width: 145px;
+	height: 145px;
+	position: absolute;
+	top:20px;
+	left: 125px;
+	background: url("../images/logo.png") no-repeat center center;
+	background-size: 100%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%); 
 }
 
-#bg{
-	height: 500px;
+#nav-border{
+		position: absolute;
+		border-right: 1px solid grey;
+		opacity: .4;
+		height: 60px;
+		left: 245px;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%); 
 }
 
-h1 {
-position: relative;
-top: 50%;
-transform: translateY(-50%);
+/* get a quote button style */
+#quote-btn, #learn-btn {
+	position: relative;
+	bottom: 10px;
+	font-family: 'Robot Condensed';
+	box-shadow:inset 0px 0px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #A31D29 5%, #CE2027 100%);
+	background-color:#A31D29;
+	border-radius:2px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-size:16px;
+	padding:10px 22px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #854629;
+}
+#quote-btn:hover, #learn-btn:hover {
+	background:linear-gradient(to bottom, #CE2027 5%, #A31D29 100%);
+	background-color:#CE2027;
+	text-decoration:none;
+}
+#quote-btn:active, #learn-btn:active {
+	text-decoration:none;
+}
+
+/* landing page background */
+#cta{
+	height: 100vh;
+	width: 100%;
+}
+
+#landing-page{
+	background-image: url("../images/bg-10.jpg");
+	background-color: #cccccc;
+	height: 100%;
+	width: 100%; 
+    background-position: 50% calc(50% + 50px);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    background-attachment: fixed;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+#cta h1, #cta h4{
+	position: relative;
+	top: 45%;
+	transform: translateY(50%);
+	font-family: 'Roboto Condensed';
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
 } 
 
+#cta h1{
+	font-weight: bold;
+}
 
+#cta h4{
+	top: 50%;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+#learn-btn{
+	display: block;
+	top: 60%;
+	width: 175px;
+	margin: 0 auto;
+
+}
