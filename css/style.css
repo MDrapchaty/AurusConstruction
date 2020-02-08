@@ -35,7 +35,7 @@ body{
 	position: absolute;
 	height:100px;
 	width: 100%;
-	background-color: #F4F5F5;
+	background-color: #F7F7F7;
 }
 
 
@@ -149,10 +149,7 @@ body{
 }
 
 /* landing page background */
-#cta{
-	height: 100vh;
-	width: 100%;
-}
+
 
 #landing-page{
 	background-image: url("../images/bg-10.jpg");
@@ -171,6 +168,13 @@ body{
     display: -moz-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
+}
+
+/* cta header*/
+
+#cta{
+	height: 100vh;
+	width: 100%;
 }
 
 #cta h1, #cta h4{
@@ -194,6 +198,7 @@ body{
     font-weight: normal;
 }
 
+/* learn more button */
 #learn-btn{
 	display: block;
 	top: 60%;
@@ -201,3 +206,55 @@ body{
 	margin: 0 auto;
 
 }
+/* about style */
+
+#about{
+	width: 100%;
+	background-color: #F7F7F7;
+	padding: 60px 0 80px;
+}
+
+#about h2{
+	font: bold 40px 'Roboto Condensed';
+	text-transform: capitalize;
+	color: #A31D29;
+	text-align: center;
+	margin-top: ;
+}
+
+#about p{
+	width: 66%;
+	margin: 60px auto 0;
+}
+
+/* windows & doors style */
+
+#windows-doors{
+	height: 450px;
+	width: 100%;
+	background-color: #A31D29;
+}
+
+#windows-doors h2, #windows-doors h3{
+	position: relative;
+	top: 100px;
+	font: bold 52px 'Roboto Condensed';
+	text-transform: capitalize;
+	color: #FFF;
+	text-align: center;
+	margin-right: 40px;
+}
+
+#windows-doors h3{
+  	font-size: 24px;
+  	top: 140px;
+}
+
+/* Testimonials */
+
+#testimonials{
+	
+}
+
+
+
