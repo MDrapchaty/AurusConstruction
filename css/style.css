@@ -21,7 +21,7 @@ time, mark, audio, video {
 
 html,body {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
  /* overflow-x: hidden; */
 }
 
@@ -48,7 +48,6 @@ body{
 }
 
 #header nav ul{
-	width: 100%;
 	position: relative;	
 	top: 10px;
 }
@@ -204,7 +203,6 @@ body{
 	top: 60%;
 	width: 175px;
 	margin: 0 auto;
-
 }
 /* about style */
 
@@ -212,6 +210,7 @@ body{
 	width: 100%;
 	background-color: #F7F7F7;
 	padding: 60px 0 80px;
+	text-align: center;
 }
 
 #about h2{
@@ -219,11 +218,10 @@ body{
 	text-transform: capitalize;
 	color: #A31D29;
 	text-align: center;
-	margin-top: ;
 }
 
 #about p{
-	width: 66%;
+	width: 55%;
 	margin: 60px auto 0;
 }
 
@@ -233,28 +231,109 @@ body{
 	height: 450px;
 	width: 100%;
 	background-color: #A31D29;
+	position: relative;
+	overflow: hidden;
 }
 
+
 #windows-doors h2, #windows-doors h3{
-	position: relative;
-	top: 100px;
+	position: absolute;
+	top: 35%;
+	right: 10px;
+	width: 100%;
 	font: bold 52px 'Roboto Condensed';
 	text-transform: capitalize;
 	color: #FFF;
 	text-align: center;
-	margin-right: 40px;
+	z-index: 2;
+}
+
+#windows-doors h2 span, #windows-doors h3 span{
+	color: #162B53;
 }
 
 #windows-doors h3{
   	font-size: 24px;
-  	top: 140px;
+  	top: 50%;
+}
+
+
+#windows, #doors{
+	
+	background-color: #cccccc;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+	
+
+    /*-webkit-animation: zoomin 5s 1;*/
+    
+}
+
+#windows-img{
+	background-image: url("../images/window-1.jpeg");
+	background-color: #cccccc;
+	height: 100%;
+	width: 100%;
+	position: relative; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(50%) 50%;
+    background-attachment: ;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; 
+	transition: transform 1s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#windows:hover #windows-img{
+	transform: scale(1.1);
+}
+
+#doors:hover #doors-img{
+	transform: scale(1.1);
+}
+
+#doors-img{
+	background-image: url("../images/door-1.jpeg");
+	background-color: #cccccc;
+	height: 100%;
+	width: 50%; 
+	position: absolute;
+	left: 50%;
+	top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: ;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; 
+    transition: transform 1s ease;
+    overflow: hidden;
 }
 
 /* Testimonials */
 
 #testimonials{
-	
+	height: 600px;
 }
 
+#testimonials h2{
+	font: bold 40px 'Roboto Condensed';
+	text-transform: capitalize;
+	color: #A31D29;
+	text-align: center;
+}
 
 
