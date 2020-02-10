@@ -381,5 +381,83 @@ body{
 /* contact style */
 
 #contact{
-	padding: 60px 60px 80px;
+	position: relative;
+	height: 650px;
+	padding: 60px 0 80px;
+	background-color: #F7F7F7;
 }
+
+#contact h3{
+	font: bold 30px 'Roboto Condensed';
+	text-transform: capitalize;
+	text-align: center;
+	color: #162B53;
+}
+
+#contact-logo{
+	content: '';
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	top: 135px;
+	left: 15%;
+	background: url("../images/logo.png") no-repeat center center;
+	background-size: 100%;	 
+}
+
+#contact ul{
+	width: 270px;
+	position: absolute;
+	top: 345px;
+	left: 15%;
+}
+
+#contact ul li{
+	font-size: 18px; 
+	text-transform: capitalize;
+	list-style: none;
+	margin: 12px;
+}
+
+#contact ul li a{
+	text-decoration: none;
+	color: #A31D29;
+}
+
+#contact ul li span{
+	color: #A31D29;
+}
+
+
+/* form style */
+form{
+	width: 40%;	
+	min-width: 450px;
+	max-width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 40%;
+}
+
+form input{
+	width: 100%;
+	border: 1px solid #162B53;
+	margin: 3px;
+	padding: 5px;
+}
+
+form textarea{
+	width: 100%;
+	border: 1px solid #162B53;
+	margin: 3px;
+	padding: 5px;
+}
+
+#submit{
+	font: 18px 'Roboto Condensed';
+	text-transform: uppercase;
+	background-color: #A31D29;
+	color: #FFF;
+}
+
+
