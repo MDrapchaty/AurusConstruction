@@ -496,3 +496,19 @@ input, select, textarea{
     color: #162B53;
     
 }
+
+#contact input[type=submit]{
+	box-shadow:inset 0px 0px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #A31D29 5%, #CE2027 100%);
+	background-color:#A31D29;
+	border-radius:2px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#contact input[type=submit]:hover{
+	background:linear-gradient(to bottom, #CE2027 5%, #A31D29 100%);
+	background-color:#CE2027;
+	text-decoration:none;
+}
