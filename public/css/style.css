@@ -19,10 +19,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-html,body {
+html, body {
   height: 100%;
   width: 100%;
- 
+  font-size: 16px;
 }
 
 body{
@@ -540,3 +540,101 @@ input, select, textarea{
 	background-color:#CE2027;
 	text-decoration:none;
 }
+
+
+/* Media queries */
+@media only screen and (max-width: 1140px) {
+	 #landing-page{
+  	background-position: 50% 50%;
+  }
+}
+
+
+
+@media only screen and (max-width: 940px) {
+  nav ul{
+  	visibility: hidden;
+  }
+
+
+  #cta h1 {
+    font-size: 48px;
+  }
+
+  #cta h4{
+  	font-size: 18px;
+  }
+
+  #about p{
+  	font-size: 12px;
+  	width: 80%;
+  }
+
+  #about h2, #testimonials h2{
+  	font-size: 32px;
+  }
+
+  #yelp{
+  	width: 80%;
+  }
+
+  #google-maps{
+  	display: none;
+  }
+
+  #contact h3{
+  	font-size: 24px;
+  	width: 80%;
+  	margin: 0 auto;
+  }
+
+   form{
+  	min-width: 0;
+  	width: 80%;
+  	
+  	left: 0;
+  	left: 15%;
+  }
+
+  #contact-logo{
+	top: 700px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+#contact ul{
+	top: 900px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+
+}
+
+#contact{
+	height: 1050px;
+}
+
+}
+
+@media only screen and (max-width: 640px){
+	#cta h1 {
+    font-size: 40px;
+  }
+
+   #windows-doors h2{
+  	font-size: 38px;	
+  }
+
+  #windows-doors h3{
+  	font-size: 20px;
+  }
+
+  #facebook{
+  	top: 500px;
+  }
+
+  form{
+  	left: 10%;
+  }
+
