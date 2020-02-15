@@ -22,14 +22,16 @@ time, mark, audio, video {
 html,body {
   height: 100%;
   width: 100%;
+ 
 }
 
 body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-
 /* landing page style */
+
+
 #header{
 	position: absolute;
 	height:100px;
@@ -167,7 +169,7 @@ body{
 	width: 100%; 
     background-position: 50% calc(50% + 75px);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     text-align: center;
     background-attachment: fixed;
     display: -webkit-inline-box;
@@ -359,18 +361,43 @@ body{
 }
 
 #yelp{
-	background-color: lightpink;
+	position: absolute;
+	left: 10%;
+	top: 180px;
 	width: 50%;
 	height: 50%;
-	float: left;
+	
 }
 
 
 #google-maps{
-	background-color: lightgreen;
-	width: 50%;
-	height: 50%;
-	float: right;
+	position: absolute;
+	left: 65%;
+	top: 180px;
+	width: 30%;
+	height: 360px;
+}
+
+#google-maps iframe{
+	width: 100%;
+	float: left;
+	height: 100%;
+}
+
+#facebook{
+	position: absolute;
+	left: 10%;
+	top: 480px;
+	width: 200px;
+	height: 150px;
+}
+
+#facebook a {
+	width: 100%;
+}
+
+#facebook a img{
+	width: 100%;
 }
 
 #border-bottom {
@@ -497,6 +524,7 @@ input, select, textarea{
     
 }
 
+/* submit button */
 #contact input[type=submit]{
 	box-shadow:inset 0px 0px 0px 0px #cf866c;
 	background:linear-gradient(to bottom, #A31D29 5%, #CE2027 100%);
