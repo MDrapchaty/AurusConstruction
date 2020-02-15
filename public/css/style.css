@@ -591,7 +591,6 @@ input, select, textarea{
    form{
   	min-width: 0;
   	width: 80%;
-  	
   	left: 0;
   	left: 15%;
   }
@@ -603,20 +602,19 @@ input, select, textarea{
 	-ms-transform: translate(-50%,-50%);
 }
 
-#contact ul{
-	top: 900px;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
+	#contact ul{
+		top: 900px;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+
+	}
+
+	#contact{
+		height: 1050px;
+	}
 
 }
-
-#contact{
-	height: 1050px;
-}
-
-}
-
 @media only screen and (max-width: 640px){
 	#cta h1 {
     font-size: 40px;
@@ -637,4 +635,59 @@ input, select, textarea{
   form{
   	left: 10%;
   }
+}
+@media only screen and (max-width: 420px) {
+	#quote-btn, #learn-btn{
+	  font-size: 12px;
+	}
 
+	#nav-border{
+	  display: none;
+	}
+
+	#cta h1 {
+      font-size: 24px;
+    }
+
+    #cta h4{
+  	  font-size: 12px;
+    }
+
+    #nav-logo{
+  	  left: 80px;
+  	  width: 125px;
+  	  height: 125px;
+    }
+
+    #about h2, #testimonials h2{
+  	font-size: 24px;
+  }
+
+    #windows-doors h2{
+  	width: 100%;
+  	font-size: 30px;
+  	text-align: center;	
+  }
+
+  #windows-doors h3{
+  	width: 100%;
+  	font-size: 16px;
+  	text-align: center;	
+  }
+
+  #yelp{
+  	left: 5%;
+  }
+
+  #facebook{
+  	width: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	top: 590px;
+  }
+
+  #contact h3{
+	font-size: 18px;
+  }
+}
