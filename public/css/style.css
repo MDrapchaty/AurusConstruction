@@ -351,7 +351,7 @@ body{
 	padding: 60px 0 80px;
 	text-align: center;
 	position: relative;
-	overflow-x: hidden; 
+	overflow: hidden; 
 }
 
 
@@ -369,7 +369,7 @@ body{
 	top: 180px;
 	width: 50%;
 	height: 50%;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 
@@ -379,7 +379,7 @@ body{
 	top: 180px;
 	width: 30%;
 	height: 360px;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 #google-maps iframe{
@@ -551,15 +551,15 @@ input, select, textarea{
 	 #landing-page{
   	background-position: 50% 50%;
   }
+
 }
 
 
 
 @media only screen and (max-width: 940px) {
-  nav ul{
-  	visibility: hidden;
+ #header nav ul{
+  	display: none;
   }
-
 
   #cta h1 {
     font-size: 48px;
@@ -698,6 +698,7 @@ input, select, textarea{
   #contact h3{
 	font-size: 18px;
   }
+
 }
 
 @media only screen and (max-width: 380px){
