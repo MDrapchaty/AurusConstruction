@@ -342,6 +342,66 @@ body{
 	transform: scale(1.1);
 }
 
+
+/* products */
+
+#products{
+	height: 360px;
+	background-color: #F7F7F7;
+	padding: ;
+	position: relative;
+	padding-top: 60px;
+}
+
+#products h3{
+	font: bold 30px 'Roboto Condensed';
+	text-transform: capitalize;
+	text-align: center;
+	color: #162B53;
+	
+}
+
+#product-logos{
+	width: 685px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+}
+
+
+#products a img{
+	width: 175px;
+	position: relative;
+}
+
+#sim-logo{
+	position: relative;
+	top: 30px;
+}
+
+#mil-logo{
+	margin-left: 75px; 
+}
+
+#iwc-logo{
+	margin-left: 75px; 
+	position: relative;
+	top: 5px;
+}
+
+
+#products-border{
+		width: 80%;
+  border-bottom: 1px solid grey;
+  opacity: .4;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+
+
 /* Testimonials */
 
 #testimonials{
@@ -586,7 +646,7 @@ input, select, textarea{
   	display: none;
   }
 
-  #contact h3{
+  #contact h3, #products h3{
   	font-size: 24px;
   	width: 80%;
   	margin: 0 auto;
@@ -618,7 +678,20 @@ input, select, textarea{
 		height: 1050px;
 	}
 
+
+	#product-logos{
+	width: 535px;
+	}
+
+
+	#products a img{
+		width: 125px;
+	}
+
+
+
 }
+
 @media only screen and (max-width: 680px){
 	#cta h1 {
     font-size: 40px;
@@ -639,6 +712,36 @@ input, select, textarea{
   form{
   	left: 10%;
   }
+
+  #product-logos{
+	width: 100%;
+	}
+
+
+	#products a img{
+		width: 100px;
+		margin-top: 40px;
+	}
+
+	#sim-logo{
+	position: relative;
+	top: 20px;
+	margin-left: 40px; 
+	}
+
+#mil-logo{
+	margin-left: 40px; 
+}
+
+#iwc-logo{
+	margin-left: 40px; 
+	position: relative;
+	top: 5px;
+}
+
+
+  
+
 }
 @media only screen and (max-width: 498px) {
 	#quote-btn, #learn-btn{
@@ -695,7 +798,7 @@ input, select, textarea{
 	top: 590px;
   }
 
-  #contact h3{
+  #contact h3, #products h3{
 	font-size: 18px;
   }
 
